@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>To-Do List</h1>
+  </header>
+  <p><b>Click on the task to know the deadline and Description of ask.</b></p>
+  <main>
+    <div class="container">
+      <form id="taskForm">
+        <input type="text" id="titleInput" placeholder="Task Title" required>
+        <textarea id="descriptionInput" placeholder="Task Description" required></textarea>
+        <input type="date" id="deadlineInput" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul id="taskList"></ul>
+      <div id="footer">
+        <p id="remainingTasks"></p>
+        <button id="clearBtn">Clear Completed</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
